@@ -1,0 +1,3 @@
+Appli qui fournit toutes opérations d'accès à la base de données
+La base et les tables doivent être créees (fournir un fichier .sql)
+Propose une IHM basique pour effectuer les opérations sur la BdD

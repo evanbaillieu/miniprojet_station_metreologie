@@ -1,0 +1,5 @@
+Appli qui permet de localiser le matériel :
+Affichage du matériel sur un plan
+Propose de creer/supp/modif batiment, salle, portique
+Permet la recherche de matériel en fonction de son type, nom, badge
+Manque ajout de lecteur

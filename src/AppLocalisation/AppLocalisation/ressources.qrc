@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>image/croix.jpg</file>
+        <file>image/pointRouge.jpg</file>
+        <file>image/pointVert.jpg</file>
+        <file>image/amper.jpg</file>
+        <file>image/batiment 4.jpg</file>
+        <file>image/volt.jpg</file>
+        <file>image/logo.png</file>
+    </qresource>
+</RCC>

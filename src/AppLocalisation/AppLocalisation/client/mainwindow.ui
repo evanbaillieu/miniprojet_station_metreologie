@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Localisation</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../ressources.qrc">
+    <normaloff>:/images/image/logo.png</normaloff>:/images/image/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>10</y>
+      <width>171</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="layoutGauche">
+     <property name="formAlignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>791</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="layoutDroit">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <property name="rowWrapPolicy">
+      <enum>QFormLayout::DontWrapRows</enum>
+     </property>
+     <property name="labelAlignment">
+      <set>Qt::AlignJustify|Qt::AlignTop</set>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignJustify|Qt::AlignTop</set>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>993</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlan">
+    <property name="title">
+     <string>Plan</string>
+    </property>
+    <widget class="QMenu" name="menuModifier">
+     <property name="title">
+      <string>Modifier</string>
+     </property>
+     <addaction name="actionModifierBatiment"/>
+     <addaction name="actionModifierSalle"/>
+     <addaction name="actionModifierPortique"/>
+    </widget>
+    <widget class="QMenu" name="menuSupprimer">
+     <property name="title">
+      <string>Supprimer</string>
+     </property>
+     <addaction name="actionSupprimerBatiment"/>
+     <addaction name="actionSupprimerSalle"/>
+     <addaction name="actionSupprimerPortique"/>
+    </widget>
+    <widget class="QMenu" name="menuCr_er">
+     <property name="title">
+      <string>Créer</string>
+     </property>
+     <addaction name="actionCreerBatiment"/>
+     <addaction name="actionCreerSalle"/>
+     <addaction name="actionCreerPortique"/>
+    </widget>
+    <addaction name="actionVoir"/>
+    <addaction name="separator"/>
+    <addaction name="menuCr_er"/>
+    <addaction name="menuModifier"/>
+    <addaction name="menuSupprimer"/>
+   </widget>
+   <widget class="QMenu" name="menuRechercher">
+    <property name="title">
+     <string>Rechercher</string>
+    </property>
+    <addaction name="actionPar_type"/>
+    <addaction name="actionPar_nom"/>
+    <addaction name="actionPar_badge"/>
+    <addaction name="separator"/>
+    <addaction name="actionPar_lieu"/>
+    <addaction name="separator"/>
+    <addaction name="actionPar_Controle"/>
+   </widget>
+   <addaction name="menuPlan"/>
+   <addaction name="menuRechercher"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionVoir">
+   <property name="text">
+    <string>Voir</string>
+   </property>
+  </action>
+  <action name="actionPar_type">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Par type</string>
+   </property>
+  </action>
+  <action name="actionPar_salle">
+   <property name="text">
+    <string>Par salle</string>
+   </property>
+  </action>
+  <action name="actionPar_batiment">
+   <property name="text">
+    <string>Par batiment</string>
+   </property>
+  </action>
+  <action name="actionPar_nom">
+   <property name="text">
+    <string>Par nom</string>
+   </property>
+  </action>
+  <action name="actionPar_atelier">
+   <property name="text">
+    <string>Par atelier</string>
+   </property>
+  </action>
+  <action name="actionAjouterSalle">
+   <property name="text">
+    <string>Salle</string>
+   </property>
+  </action>
+  <action name="actionModifierBatiment">
+   <property name="text">
+    <string>Batiment</string>
+   </property>
+  </action>
+  <action name="actionModifierSalle">
+   <property name="text">
+    <string>Salle</string>
+   </property>
+  </action>
+  <action name="actionSupprimerBatiment">
+   <property name="text">
+    <string>Batiment</string>
+   </property>
+  </action>
+  <action name="actionSupprimerSalle">
+   <property name="text">
+    <string>Salle</string>
+   </property>
+  </action>
+  <action name="actionPar_badge">
+   <property name="text">
+    <string>Par badge</string>
+   </property>
+  </action>
+  <action name="actionPar_lieu">
+   <property name="text">
+    <string>Par lieu</string>
+   </property>
+  </action>
+  <action name="actionCreerBatiment">
+   <property name="text">
+    <string>Batiment</string>
+   </property>
+  </action>
+  <action name="actionCreerSalle">
+   <property name="text">
+    <string>Salle</string>
+   </property>
+  </action>
+  <action name="actionSupprimerPortique">
+   <property name="text">
+    <string>Portique</string>
+   </property>
+  </action>
+  <action name="actionModifierPortique">
+   <property name="text">
+    <string>Portique</string>
+   </property>
+  </action>
+  <action name="actionCreerPortique">
+   <property name="text">
+    <string>Portique</string>
+   </property>
+  </action>
+  <action name="actionPar_Controle">
+   <property name="text">
+    <string>Par controle</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

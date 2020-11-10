@@ -1,0 +1,11 @@
+Serveur TCP qui communique avec les portiques (lecteur semtec, arduino, ou simulé)
+Il accède aussi à la base de données MySQL
+Il recoit un n° d'id dès la détection d'un tag via le portique concerné
+Récupère l'id et n°Ip du portique
+Détermine le déplacement de appareil identifié et met à jour la BdD
+
+Remarque:
+C'est le projet qui contient réellement
+le code source des couches metier & physique
+(les autres projets ont des liens sur ses fichiers)
+A faire (Creer une lib)

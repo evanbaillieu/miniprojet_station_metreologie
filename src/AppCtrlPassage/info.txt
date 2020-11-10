@@ -1,0 +1,8 @@
+Client TCP qui communique avec le lecteur RFID
+il envoie un n° d'id dès la détection d'un tag
+Le serveur (AppServeur) récupère l'id et n°Ip du client (permet la localisation)
+
+Remarque sur le prog :
+Pas d'accès à la base de données
+code C++ (sans lib Qt - utilise API socket)
+A installer sur système linux (pc ou raspberry)
