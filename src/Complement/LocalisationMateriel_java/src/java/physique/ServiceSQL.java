@@ -18,8 +18,8 @@ public abstract class ServiceSQL {
         this.dbHost = "localhost";
         this.dbPort = 3306;
         this.dbName = "localisationmateriel";
-        this.dbUser = "saturne";
-        this.dbPasswd = "titan";
+        this.dbUser = "userbdd";
+        this.dbPasswd = "mysqlpass";
     }
 
     public Connection connect() throws Exception {
